@@ -58,3 +58,9 @@ for i in range(len(list_user)):  # 1-9
 
 # 2. create an empty list. run from 1 to 10 , append random.choice([1, 4, 9, -2])
 #    print statistics.mean
+my_random: list[int] = []
+for _ in range(10):
+    rand_from_choice = random.choice( [1, 4, 9, -2] )
+    my_random.append(rand_from_choice)
+print(my_random)
+print(statistics.mean(my_random))
